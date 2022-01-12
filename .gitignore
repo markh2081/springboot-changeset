@@ -1,0 +1,78 @@
+# Maven
+*target*
+log/
+
+# JS dependencies
+*node_modules*
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# eclipse specific git ignore
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.factorypath
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+replay_pid*
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# STS (Spring Tool Suite)
+.springBeans
+
+#Clover
+.clover/
+
+# IntelliJ
+.idea
+*.iml
+
+# yarn specific
+**/src/main/frontend/dist/**
+yarn.lock
+
+# Maven revision
+.flattened-pom.xml​
+
+# Mac
+.DS_Store
+
+.yo-rc.json
+
+.java-version
