@@ -1,6 +1,7 @@
 # Maven
 *target*
 log/
+.mvn
 
 # JS dependencies
 *node_modules*

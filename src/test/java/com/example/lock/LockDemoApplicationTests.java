@@ -22,23 +22,6 @@ class LockDemoApplicationTests {
 
 	@Test
 	void contextLoads() {
-		//https://javamana.com/2021/08/20210802130431949u.html
-		String token = "";
-		while (true) {
-			// Try to take the lock
-			token = this.lockService.acquire(SCHEDULER_LOCK, 2);
-			if (token != null) {
-				// Get the lock
-			} else {
-				// wait for LOCK_EXPIRATION, Try it again
-				try {
-					Thread.sleep(LOCK_EXPIRATION);
-				} catch (Exception e) {
-					log.error("Error en thread.sleep");
-				}
-			}
-		}
-
 	}
 
 }
