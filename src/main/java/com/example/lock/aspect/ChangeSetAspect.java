@@ -40,7 +40,7 @@ public class ChangeSetAspect {
   @Around("hasChangeLogAnnotation()")
   public Object changeSet(ProceedingJoinPoint joinPoint) throws Throwable {
     ChangeSetAnnotation changeSetAnnotation = this.getChangeSetAnnotation((MethodSignature) joinPoint.getSignature());
-    String lock = CHANGEDATASET_LOCK + changeSetAnnotation;
+    String lock = CHANGEDATASET_LOCK + changeSetAnnotation.changeId();
     String token = lockService.acquire(lock, LOCK_EXPIRATION);
     if (token == null) {
       return null;

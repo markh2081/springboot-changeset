@@ -47,7 +47,7 @@ public class Setup {
   @ChangeSetAnnotation(author = "jose", changeId = "4")
   public void fourth() {
     ClientDocument clientDocument = new ClientDocument();
-    clientDocument.setName("THIRD");
+    clientDocument.setName("FOURTH");
     ClientDocument saved = clientRepository.save(clientDocument);
     log.info("Document saved: [{}]", saved);
   }
@@ -56,7 +56,25 @@ public class Setup {
   @ChangeSetAnnotation(author = "jose", changeId = "5")
   public void fifth() {
     ClientDocument clientDocument = new ClientDocument();
-    clientDocument.setName("THIRD");
+    clientDocument.setName("FIFTH");
+    ClientDocument saved = clientRepository.save(clientDocument);
+    log.info("Document saved: [{}]", saved);
+  }
+
+  @EventListener(ApplicationReadyEvent.class)
+  @ChangeSetAnnotation(author = "jose", changeId = "6")
+  public void sixth() {
+    ClientDocument clientDocument = new ClientDocument();
+    clientDocument.setName("SIXTH");
+    ClientDocument saved = clientRepository.save(clientDocument);
+    log.info("Document saved: [{}]", saved);
+  }
+
+  @EventListener(ApplicationReadyEvent.class)
+  @ChangeSetAnnotation(author = "jose", changeId = "7")
+  public void seventh() {
+    ClientDocument clientDocument = new ClientDocument();
+    clientDocument.setName("SEVENTH");
     ClientDocument saved = clientRepository.save(clientDocument);
     log.info("Document saved: [{}]", saved);
   }
