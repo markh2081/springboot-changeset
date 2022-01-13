@@ -3,7 +3,6 @@ package com.example.lock.aspect;
 import java.lang.reflect.Method;
 
 import com.example.lock.annotation.ChangeSetAnnotation;
-import com.example.lock.exception.AlreadyLockedException;
 import com.example.lock.service.ChangeLogService;
 import com.example.lock.service.LockService;
 import lombok.extern.slf4j.Slf4j;

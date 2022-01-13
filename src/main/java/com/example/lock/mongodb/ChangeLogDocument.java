@@ -1,7 +1,6 @@
 package com.example.lock.mongodb;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
