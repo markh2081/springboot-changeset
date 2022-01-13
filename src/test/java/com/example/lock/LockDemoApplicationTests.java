@@ -1,9 +1,6 @@
 package com.example.lock;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import com.example.lock.service.LockService;
-import javax.validation.constraints.AssertTrue;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
